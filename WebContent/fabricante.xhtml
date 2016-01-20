@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html">
+	<h:head>
+        <title>Tela de Fabricate</title>
+    </h:head>
+    <h:body>
+       
+        
+        
+        <center>
+              <br/>
+            <h:form>
+            	<fieldset>
+            	    <legend> Registro de fabricate </legend>
+	                <h:panelGrid columns="2">
+	                    Nome: <h:inputText id="txtdescricao" value="#{fabricanteBean.f.nome}"/>
+	                    salario: <h:inputText id="txtsalario" value="#{fabricanteBean.f.salario}"/>
+	                    Fucao: <h:inputText id="txtfuncao" value="#{fabricanteBean.f.salario}"/>
+	                    <h:inputHidden id="txtcod" />
+	                    <h:commandButton value="Salvar" action="#{fabricanteBean.salvar}"/>
+	                </h:panelGrid>
+             	</fieldset>
+                </h:form>
+        </center>
+    </h:body>
+</html>
